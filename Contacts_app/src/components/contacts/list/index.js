@@ -1,8 +1,8 @@
 import React from "react";
 
-function List(params) {
+function List() {
     return(
-    <>List</>
+    <div>List</div>
     )
 }
 
