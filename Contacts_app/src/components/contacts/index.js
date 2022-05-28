@@ -8,17 +8,16 @@ function Contacts() {
 
     var start = true;
     useEffect(()=>{
-        if(!contacts.length && start || contacts.length){
+        if((!contacts.length && start) || contacts.length){
             console.log(contacts);
             start = false;
         }
     },[contacts])
 
     return(
-        <> contacts 
-        
-         <List/>
-         <Form addContact={setContacts} contacts={contacts} />
+        <>
+            <List contacts={contacts}/>
+            <Form addContact={setContacts} contacts={contacts} />
         
         </>
     )
