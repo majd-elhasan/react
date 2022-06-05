@@ -1,0 +1,18 @@
+.App{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+body,html, #root{height: 100%;}
+
+.Todo-form{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+li{
+    text-align: initial;
+}
