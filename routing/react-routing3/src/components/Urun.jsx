@@ -1,3 +1,4 @@
+import { toBeEmpty } from "@testing-library/jest-dom/dist/matchers";
 import React from "react";
 import { useParams } from "react-router-dom";
 
@@ -32,9 +33,9 @@ function Urun() {
             item.id == UrunID
         )
     })
-    
+    if (UrunID <= veri.length && UrunID > 0)
         return(
-            <div>
+            <div class="alert alert-info" role="alert">
                 <div>{arr[0].kategori}</div>
                 <div>{arr[0].urun}</div>
                 <div>{arr[0].acıklama}</div>
@@ -42,6 +43,13 @@ function Urun() {
             </div>
             
         )
-}
+        else return(
+            <>
+            <div class="alert alert-info" role="alert">
+            this Product is not found
+            </div>
+            </>
+        )
+    }
 
 export default Urun;

@@ -52,9 +52,8 @@ const veri=[
                     })
                 }
                 </div>
-                <div class="alert alert-info" role="alert">
+                
                     <Outlet/>
-                </div>
             </div>
         </div>
     );
